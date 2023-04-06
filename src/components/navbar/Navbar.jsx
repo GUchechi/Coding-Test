@@ -16,14 +16,14 @@ const Navbar = () => {
     <div>
       <nav className="navbar">
         <div className="navbar__container">
-          <div >
-            <img src={logo} alt="logo" className="nav__logo"/>
+          <div className="nav__logo">
+            <img src={logo} alt="logo" width="85px" height="37px" className="nav__logo--image"/>
           </div>
           <ul
             className={`navbar__container__menu ${toggleIcon ? "active" : ""}`}
           >
             {NavData.map((item, index) => (
-              <li key={index} className="navbar__container__menu__item" >
+              <li key={index} className="navbar__container__menu__item">
                 {item.label}
               </li>
             ))}
