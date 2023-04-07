@@ -45,7 +45,7 @@
     display: flex;
     padding: 0px;
   }
-  
+
   .navbar__container__menu {
     display: flex;
     flex-direction: column;
@@ -58,14 +58,18 @@
     transition: all 0.5s ease;
   }
 
-  .nav__logo--image{
+  .nav__logo--image {
     width: 45px;
     height: 25px;
     margin-top: 3px;
   }
 
   .navbar__container__menu.active {
-    background: #111030;
+    background: radial-gradient(
+      52.84% 62.95% at 50% 38.45%,
+      #050422 0%,
+      #000000 100%
+    );
     left: 0px;
     opacity: 1;
   }
