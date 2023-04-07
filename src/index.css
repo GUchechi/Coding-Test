@@ -8,6 +8,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #050422;
-  color: #fff;
+  background: radial-gradient(
+    52.84% 62.95% at 50% 38.45%,
+    #050422 0%,
+    #000000 100%
+  );
 }

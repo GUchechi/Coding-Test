@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+  background-color: inherit;
+  color: #fff;
+}
+
+.footer p {
+  font-size: 12px;
+  text-align: center;
+}
