@@ -24,24 +24,19 @@
   padding-bottom: 2rem;
 }
 
+.movie__info h3 {
+  font-size: 18px;
+}
+
 .movie__results {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
   font-size: 12px;
+  font-weight: 600;
 }
 
 .red__subGroup {
   color: #9f001d;
 }
-
-/*
- 
-  .movie__genre, .movie__date, .movie__director {
-    margin: 0;
-  }
-  
-  .red__subGroup {
-    font-weight: bold;
-  }  */

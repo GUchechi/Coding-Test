@@ -3,7 +3,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <footer className="footer">
-      <p className="copyright">
+      <p className="footer__copyright">
         Copyright © StarWars API 2023. All Rights Reserved.
       </p>
     </footer>
