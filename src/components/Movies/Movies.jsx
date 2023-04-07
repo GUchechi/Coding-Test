@@ -1,19 +1,24 @@
 import { useState, useEffect } from "react";
+import Spinner from "../Spinner";
 import "./Movies.css";
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchMovies = async () => {
       const response = await fetch("https://swapi.dev/api/films/");
       const data = await response.json();
       setMovies(data.results);
+      setIsLoading(false);
     };
     fetchMovies();
   }, []);
 
-  return (
+  return isLoading ? (
+    <Spinner />
+  ) : (
     <main className="movies">
       {movies.map((movie) => (
         <div className="movies__container" key={movie.episode_id}>
@@ -21,7 +26,7 @@ const Movies = () => {
             <img
               src={`https://starwars-visualguide.com/assets/img/films/${movie.episode_id}.jpg`}
               alt={movie.title}
-              className='movie__image'
+              className="movie__image"
             />
           </div>
           <div className="movie__info">
