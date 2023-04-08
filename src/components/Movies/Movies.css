@@ -42,9 +42,11 @@
   color: #9f001d;
 }
 
-
 @media only screen and (min-width: 375px) {
-  .movies__container{
+  .movies {
+    margin-top: 1rem;
+  }
+  .movies__container {
     margin-top: 1rem;
   }
 }
