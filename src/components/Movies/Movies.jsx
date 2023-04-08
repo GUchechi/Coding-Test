@@ -16,11 +16,17 @@ const Movies = () => {
     fetchMovies();
   }, []);
 
+   // Sort movies by release date
+   const sortedMovies = [...movies].sort(
+    (b, a) => new Date(a.release_date) - new Date(b.release_date)
+  );
+
+
   return isLoading ? (
     <Spinner />
   ) : (
     <main className="movies">
-      {movies.map((movie) => (
+      {sortedMovies.map((movie) => (
         <div className="movies__container" key={movie.episode_id}>
           <div className="movie__image--card">
             <img
