@@ -18,7 +18,7 @@ const Movies = () => {
 
    // Sort movies by release date
    const sortedMovies = [...movies].sort(
-    (a, b) => new Date(a.release_date) - new Date(b.release_date)
+    (b, a) => new Date(a.release_date) - new Date(b.release_date)
   );
 
 
