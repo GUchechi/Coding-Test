@@ -3,7 +3,7 @@ import { NavData } from "../navbar/NavData";
 import { HiX } from "react-icons/hi";
 import { FaBars } from "react-icons/fa";
 import logo from "../../assets/logo.png";
-import "./Navbar.css";
+import "./Navbar.css"; 
 
 const Navbar = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
